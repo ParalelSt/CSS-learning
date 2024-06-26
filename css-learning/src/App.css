@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Outfit, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    margin-bottom: 1000px;
+}
+
+.notif-bar {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    background-color:rgb(168, 143, 217);
+    font-size: 0.9em;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.2em;
+    font-size: 20px;
+}
+
+.nav-bar .left-nav {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar .left-nav button {
+    border: none;
+    font-size: 18px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.nav-bar .left-nav .build-a-bundle {
+    margin-left: 30px;
+}
+
+.nav-bar .left-nav a:visited{
+    color: black;
+}
+
+.logo {
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-bar .right-nav {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar .right-nav img {
+    height: 25px;
+    width: 25px;
+}
+
+.nav-bar .right-nav li {
+    display: inline-block;
+    padding: 0px 10px;
+    margin: 0px 10px;
+}
+
+.nav-bar .right-nav img {
+    display: inline-block;
+}
+
+.nav-bar .right-nav li a:visited{
+    color: black;
+}
+
+.hero {
+    background-color: lightblue;
+    height: 800px;
+}
+
+@media only screen and (min-width: 300) {
+    .right-nav {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 300) {
+    .right-nav {
+        display: none;
+    }
+}
