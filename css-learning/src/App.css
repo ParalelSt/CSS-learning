@@ -83,7 +83,8 @@ body {
     color: black;
 }
 
-.hero {
+.left-section {
     background-color: lightblue;
-    height: 800px;
+    height: 70vh;
+    width: 50%;
 }

@@ -1,5 +1,3 @@
-import { useWindowSize } from "@uidotdev/usehooks";
-
 export default function NavBar() {
   return (
     <>
