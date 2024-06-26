@@ -1,7 +1,9 @@
+import { useWindowSize } from "@uidotdev/usehooks";
+
 export default function NavBar() {
   return (
     <>
-      <div className="container">
+      <div className="nav-bar-container">
         <div className="notif-bar-div">
           <h1 className="notif-bar">FREE POUCH ON ORDERS OVER &#163;40</h1>
         </div>
@@ -34,7 +36,6 @@ export default function NavBar() {
             </ul>
           </div>
         </nav>
-        <section className="hero"></section>
       </div>
     </>
   );
