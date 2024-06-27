@@ -93,6 +93,23 @@ body {
     width: 50vw;
 }
 
+.hero-container .hero .left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em 5em;
+}
+
+.section-title {
+    font-size: 3.5em;
+    margin-bottom: 1em;
+}
+
+.section-comment {
+    font-size: 1.7em;
+    margin-bottom: 2em;
+}
+
 .hero-container .hero .section-images {
     display: flex;
     justify-content: center;
