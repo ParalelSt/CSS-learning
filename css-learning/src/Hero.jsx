@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Hero() {
   return (
     <div className="hero-container">
@@ -7,7 +5,7 @@ export default function Hero() {
         <div className="left-section">
           <div className="reviews-container"></div>
           <h1 className="section-title">
-            New Caramelised Biscuit falvour live!
+            New Caramelised Biscuit flavour live!
           </h1>
           <h3 className="section-comment">Fuel your day with protein cereal</h3>
           <div className="section-images">

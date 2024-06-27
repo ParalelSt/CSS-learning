@@ -18,7 +18,7 @@ body {
     justify-content: center;
     padding: 1em;
     background-color:rgb(168, 143, 217);
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .nav-bar {
@@ -102,16 +102,16 @@ body {
 }
 
 .hero-container .hero .section-images img {
-    width: 5rem;
-    height: 8rem;
+    width: 5em;
+    height: 8em;
 }
 
-.hero-container .hero .right-section {
-}
 
 .hero-container .hero .right-section img {
     height: 75vh;
-    width: ;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 @media only screen and (max-width: 620px) {
