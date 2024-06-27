@@ -37,7 +37,6 @@ export default function Hero() {
           <button className="shop-now-btn">SHOP NOW</button>
           <p>Join 40,000+ who made the switch</p>
         </div>
-        <div className="right-section"></div>
         <div className="right-section">
           <img src="Cereal_preview.webp" alt="cereal-preview" />
         </div>
