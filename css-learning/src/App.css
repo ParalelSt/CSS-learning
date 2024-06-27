@@ -83,8 +83,50 @@ body {
     color: black;
 }
 
-.left-section {
-    background-color: lightblue;
-    height: 70vh;
-    width: 50%;
+.hero {
+    display: flex;
+}
+
+.hero-container .hero .left-section {
+    background-color: rgb(112,228,236);
+    height: 75vh;
+    width: 50vw;
+}
+
+.hero-container .hero .section-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 0px 20px;
+}
+
+.hero-container .hero .section-images img {
+    width: 5rem;
+    height: 8rem;
+}
+
+.hero-container .hero .right-section {
+}
+
+.hero-container .hero .right-section img {
+    height: 75vh;
+    width: ;
+}
+
+@media only screen and (max-width: 620px) {
+    .nav-bar-container .nav-bar .right-nav {
+        display: none;
+    }
+
+    .nav-bar-container .nav-bar .left-nav {
+        display: none;
+    }
+
+    .logo {
+        justify-content: flex-start;
+        margin-left: 50px;
+    }
+
+    
 }
