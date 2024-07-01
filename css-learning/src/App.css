@@ -61,8 +61,11 @@ body {
 .nav-bar .right-nav {
     flex: 2;
     display: flex;
-    justify-content: center;
+    justify-content: center
+}
 
+.right-nav-content {
+    display: flex;
 }
 
 .nav-bar .right-nav img {
@@ -93,7 +96,6 @@ body {
 .hero-container .hero .left-section {
     background-color: rgb(112, 228, 236);
     height: 73vh;
-    width: 50vw;
     padding: 1rem 5rem;
     padding-left: 15rem;
     display: flex;
@@ -183,9 +185,14 @@ body {
     color: white;
 }
 
+@media only screen and (max-width: 1445px) {
+    .hero-container .hero .left-section {
+        padding-left: 2rem;
+    }
+}
 
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 1024px) {
     .nav-bar-container .nav-bar .right-nav {
         display: none;
     }
@@ -197,6 +204,17 @@ body {
     .logo {
         justify-content: flex-start;
         margin-left: 50px;
+    }
+
+    .hero-container .hero {
+        grid-template-columns: 1fr;
+
+    }
+
+    .hero-container .hero .left-section .content-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     
