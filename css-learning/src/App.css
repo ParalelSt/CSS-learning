@@ -212,10 +212,47 @@ body {
     }
 
     .hero-container .hero .left-section .content-container {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
+    .hero-container .hero .left-section .content-container .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+    }
     
+}
+
+@media only screen and (max-width: 620px) {
+
+    .hero-container .hero .left-section {
+        padding: 0;
+    }
+
+    .hero-container .hero .left-section .content-container .section-title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .hero-container .hero .left-section .content-container .section-comment {
+        font-size: 1rem;
+    }
+
+    .hero-container .hero .left-section .content-container .section-images img {
+        width: 4rem;
+        height: 6.5rem;
+    }
+
+    .hero-container .hero .left-section .content-container .lower-left-section .shop-now-btn {
+        width: 80%;
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+
+    .hero-container .hero .left-section .content-container .lower-left-section .join-message {
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+    }
 }
