@@ -185,10 +185,12 @@ body {
     color: white;
 }
 
-@media only screen and (max-width: 1445px) {
+@media only screen and (max-width: 1550px) {
     .hero-container .hero .left-section {
         padding-left: 2rem;
     }
+
+
 }
 
 
