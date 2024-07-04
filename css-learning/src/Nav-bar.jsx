@@ -1,4 +1,14 @@
+import { useState } from "react";
+
 export default function NavBar() {
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+  const mobileNav = document.querySelector(".mobile-nav");
+
+  const hamburgerMenu = () => {
+    setHamburgerOpen((open) => !open);
+    mobileNav.src = "";
+  };
+
   return (
     <>
       <div className="nav-bar-container">
@@ -28,8 +38,15 @@ export default function NavBar() {
               <li className="user-icon">
                 <img src="/User.svg" alt="user-icon" />
               </li>
-              <button className="hamburger">
-                <img className="hamburger-menu" src="DropDWN.svg" alt="" />
+              <button
+                className="hamburger hamburger-menu"
+                onClick={() => hamburgerMenu()}
+              >
+                <img
+                  className="hamburger-menu"
+                  src={hamburgerOpen ? "DropDWNBars.svg" : "DropDWN.svg"}
+                  alt=""
+                />
               </button>
               <li className="cart-icon">
                 <img src="/Cart.svg" alt="cart-icon" />
@@ -37,7 +54,10 @@ export default function NavBar() {
             </ul>
           </div>
 
-          <div className="mobile-nav">
+          <div
+            className={`mobile-nav ${hamburgerOpen ? "is-open" : ""}`}
+            id="mobileNav"
+          >
             <div className="items-display">
               <div className="item item1">
                 <span>
@@ -51,6 +71,7 @@ export default function NavBar() {
                       250mg multi-serve pouches
                     </p>
                   </div>
+                  <img className="item-arrow" src="Arrow.svg" alt="" />
                 </span>
               </div>
               <div className="item item2">
@@ -62,9 +83,10 @@ export default function NavBar() {
                     <p className="item-notification">ON THE GO</p>
                     <p className="item-title">CEREAL POTS</p>
                     <p className="item-description">
-                      50g pots for when you're on the go
+                      50g pots for when you&apos;re on the go
                     </p>
                   </div>
+                  <img className="item-arrow" src="Arrow.svg" alt="" />
                 </span>
               </div>
               <div className="item item3">
@@ -79,6 +101,7 @@ export default function NavBar() {
                       Mix & match your favorite flavors
                     </p>
                   </div>
+                  <img className="item-arrow" src="Arrow.svg" alt="" />
                 </span>
               </div>
               <div className="item item4">
@@ -93,6 +116,7 @@ export default function NavBar() {
                       One for the coffee lovers out there!
                     </p>
                   </div>
+                  <img className="item-arrow" src="Arrow.svg" alt="" />
                 </span>
               </div>
             </div>
